@@ -1,0 +1,224 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(239, 243, 247);
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: row;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  @font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+}
+
+  .container-image-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+    height: 100%;
+    
+    gap: calc(65vh - 2rem);
+    background-image: url('images/leaf-background.avif');
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
+  }
+ 
+
+  .logo-container{
+    height: 6rem;
+    width: 100%;
+  
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: rgba(12, 8, 8, 0.5); /* Semi-transparent background color */
+    gap: 0.3rem;
+  }
+  .logo{
+    height: 5rem;
+  }
+  h1{
+    color: white;
+    font-size: 4em;
+    font-family: 'MyCustomFont', serif;
+
+  }
+  footer{
+    height: 2rem;
+    width: 100%;
+   
+  }
+
+  .container-info{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .container-content{
+    width: 100%;
+    height: 35vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 221, 221);
+  }
+  .content-text{
+    width: 90%;
+
+    height: 75%;
+    display: flex;
+    align-items: flex-end;
+    
+    
+  }
+  .container-form{
+    width: 100%;
+  
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.5), 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+   
+  }
+  .text-in-content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  form{
+    height: 90%;
+    width: 80%;
+    margin-left: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+    font-family:Arial, Helvetica, sans-serif
+    
+  }
+  .container-submit{
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 221, 221);
+  }
+  .submit-text{
+      width: 90%;
+ 
+      height: 75%;
+      
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright{
+    color: white;
+  }
+
+  ul{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .form-p{
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  input{
+    width: 12rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: none;
+
+  }
+  input:focus{
+    border: blue;
+  }
+  .submit{
+    width: 12rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(36, 151, 45);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:900;
+  }
+  .btn-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  
+
+input:hover {
+  border: 2px solid blue; /* Turn blue on hover */
+}
+
+input:focus:valid {
+  border: 2px solid darkgreen;
+}
+
+input:focus:invalid {
+  border: 2px solid darkred;
+}
